@@ -1,6 +1,8 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 # dependencies
-/node_modules
+node_modules
+node_modules/*
+node_modules/**
 
 # compiled output
 /dist
@@ -67,3 +69,4 @@ NX
 nx-cloud.env
 
 .nx/cache
+node_modules

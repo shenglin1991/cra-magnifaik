@@ -44,14 +44,10 @@
               {
                 "sourceTag": "type:features",
                 "onlyDependOnLibsWithTags": [
-                  "type:data-access",
                   "type:http-clients",
                   "type:stores",
-                  "type:enums",
                   "type:features",
                   "type:models",
-                  "type:mocks",
-                  "type:ui",
                   "type:shared",
                   "type:utils",
                   "type:models",
@@ -65,23 +61,8 @@
                   "type:models",
                   "type:enums",
                   "type:mocks",
-                  "type:ui",
                   "type:shared",
                   "type:utils"
-                ]
-              },
-              {
-                "sourceTag": "type:ui",
-                "onlyDependOnLibsWithTags": ["type:ui", "type:models", "type:shared"]
-              },
-              {
-                "sourceTag": "type:data-access",
-                "onlyDependOnLibsWithTags": [
-                  "type:shared",
-                  "type:utils",
-                  "type:models",
-                  "type:enums",
-                  "type:data-access"
                 ]
               },
               {
@@ -95,8 +76,6 @@
               {
                 "sourceTag": "type:shared",
                 "onlyDependOnLibsWithTags": [
-                  "type:data-access",
-                  "type:enums",
                   "type:models",
                   "type:mocks",
                   "type:features",
@@ -119,45 +98,8 @@
                   "type:mocks",
                   "type:store-actions",
                   "type:data-access",
-                  "type:enums",
                   "type:stores"
                 ]
-              },
-              {
-                "sourceTag": "universe:common",
-                "onlyDependOnLibsWithTags": ["universe:common", "type:shared"]
-              },
-              {
-                "sourceTag": "universe:broom",
-                "onlyDependOnLibsWithTags": ["universe:common", "universe:broom"]
-              },
-              {
-                "sourceTag": "universe:bres",
-                "onlyDependOnLibsWithTags": ["universe:common", "universe:bres"]
-              },
-              {
-                "sourceTag": "universe:bob",
-                "onlyDependOnLibsWithTags": ["universe:common", "universe:bob"]
-              },
-              {
-                "sourceTag": "universe:bset",
-                "onlyDependOnLibsWithTags": ["universe:common", "universe:bset"]
-              },
-              {
-                "sourceTag": "universe:bpro",
-                "onlyDependOnLibsWithTags": ["universe:common", "universe:bpro"]
-              },
-              {
-                "sourceTag": "universe:dcc",
-                "onlyDependOnLibsWithTags": ["universe:common", "universe:dcc"]
-              },
-              {
-                "sourceTag": "universe:alerts",
-                "onlyDependOnLibsWithTags": ["universe:common", "universe:alerts"]
-              },
-              {
-                "sourceTag": "type:legacy",
-                "onlyDependOnLibsWithTags": ["*"]
               }
             ]
           }
