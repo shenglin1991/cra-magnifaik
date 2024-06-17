@@ -1,1 +1,1 @@
-export * from './lib/cra-stores/cra-stores.component';
+export * from './lib/cra-stores-core.module';

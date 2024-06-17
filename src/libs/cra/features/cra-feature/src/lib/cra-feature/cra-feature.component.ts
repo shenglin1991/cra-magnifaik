@@ -1,10 +1,12 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MatCardModule } from '@angular/material/card';
+import { CraStoresCoreModule } from '@cra/stores';
 
 @Component({
   selector: 'cra-feature-cra-feature',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, MatCardModule, CraStoresCoreModule],
   templateUrl: './cra-feature.component.html',
   styleUrl: './cra-feature.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

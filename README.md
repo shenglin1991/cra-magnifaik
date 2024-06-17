@@ -5,15 +5,17 @@
 ## Integrate with editors
 
 This repo use NX, Angular, Ngrx.
-Please make sure you have node installed
-Now you should install also Yarn
-npm install -g yarn
+
+Please make sure you have nodejs installed.
+
+Now you should install also Yarn.
+`npm install -g yarn`
 
 ## Start the application
 Firstly you can install all dependencies,
 Run `yarn install` to install all dependencies.
 
-Run `yarn start` to start the development server.
+Run `yarn cra` to start the development server.
 
 ## Explore the project graph
 
