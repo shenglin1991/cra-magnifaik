@@ -1,0 +1,11 @@
+# Add files here to ignore them from prettier formatting
+
+**/*.js
+/dist
+/coverage
+/node_modules
+/dependency-check-bin
+/dependency-check-reports
+.angular
+
+/.nx/cache

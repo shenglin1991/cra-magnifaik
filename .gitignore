@@ -1,0 +1,69 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+# dependencies
+/node_modules
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+/build
+
+# Remove cake build tooling
+# Build related
+!tools/tslint-rules/**
+tools/**
+build/**
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/ng.code-snippets
+
+# misc
+/.angular
+/.nx
+/.sass-cache
+/connect.lock
+/coverage
+/libs/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# CI/CD
+/build/tools/*
+/build/*.nupkg
+!/build/tools/packages.config*
+
+# System Files
+.DS_Store
+Thumbs.db
+/.vs
+
+# CypressTests
+/cypress/videos
+/cypress/screenshots
+/Folder.DotSettings.user
+
+# OWASP dependency check folder
+/dependency-check-*
+
+NX
+
+.angular
+.env
+nx-cloud.env
+
+.nx/cache
