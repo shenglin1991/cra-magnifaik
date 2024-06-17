@@ -1,0 +1,20 @@
+{
+  "name": "cra-models",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "src/libs/cra/models/cra-models/src",
+  "prefix": "lib",
+  "projectType": "library",
+  "tags": ["models"],
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "src/libs/cra/models/cra-models/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}
