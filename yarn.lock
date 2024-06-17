@@ -1495,7 +1495,7 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
-"@babel/runtime@^7.22.6", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.21.0", "@babel/runtime@^7.22.6", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
   version "7.24.7"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.24.7.tgz#f4f0d5530e8dbdf59b3451b9b3e594b6ba082e12"
   integrity sha512-UwgBRMjJP+xv857DCngvqXI3Iq6J4v0wXmwc6sapg+zyhbwmQX67LUEFrkK5tbyJ30jGuG3ZvWpBiB9LCy1kWw==
@@ -3015,6 +3015,49 @@
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@msgpackr-extract/msgpackr-extract-win32-x64/-/msgpackr-extract-win32-x64-3.0.3.tgz#0aa5502d547b57abfc4ac492de68e2006e417242"
   integrity sha512-x0fWaQtYp4E6sktbsdAqnehxDgEc/VwM7uLsRCYWaiGu0ykYdZPiS8zCWdnjHwyiumousxfBm4SO31eXqwEZhQ==
+
+"@ngrx/effects@^18.0.0":
+  version "18.0.0"
+  resolved "https://registry.yarnpkg.com/@ngrx/effects/-/effects-18.0.0.tgz#11e141c79b353984b5090a581ce8e1ae37e21f19"
+  integrity sha512-njDbltV4XnUO10VaIOoiXF+aCyhVnvg6NTLudG9uhK/+cuv3D10cTZ3pHv7ycjpc40Pp16Sz0SY+daj9HfvdKg==
+  dependencies:
+    "@ngrx/operators" "17.0.0-beta.0"
+    tslib "^2.0.0"
+
+"@ngrx/entity@^18.0.0":
+  version "18.0.0"
+  resolved "https://registry.yarnpkg.com/@ngrx/entity/-/entity-18.0.0.tgz#cc0ce279a48353fb9506454bd240eb76b8b8a784"
+  integrity sha512-IzW8+eEfwe9NLhJREv/4lpSp+UftlMmWhu4EknDatlJeHKzDOSGwHnYM0fJEzGljSD8RcO6z/hSWJk/gGbOV7w==
+  dependencies:
+    tslib "^2.0.0"
+
+"@ngrx/operators@17.0.0-beta.0":
+  version "17.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/@ngrx/operators/-/operators-17.0.0-beta.0.tgz#030486f3a610fa919d2b155aad3bc7b4c708550d"
+  integrity sha512-EbO8AONuQ6zo2v/mPyBOi4y0CTAp1x4Z+bx7ZF+Pd8BL5ma53BTCL1TmzaeK5zPUe0yApudLk9/ZbHXPnVox5A==
+  dependencies:
+    tslib "^2.3.0"
+
+"@ngrx/router-store@^18.0.0":
+  version "18.0.0"
+  resolved "https://registry.yarnpkg.com/@ngrx/router-store/-/router-store-18.0.0.tgz#9075da4b634db3b89a4ad572db0c3b716ff8572d"
+  integrity sha512-Kiyh7qjs5PdNjYCip+BA0hx/tpjP/pDr0gUlz3X+9qTMC1vjzPmuzposZbTT2wZE+Z81TOoqdaZ5ZgRxAxhIMw==
+  dependencies:
+    tslib "^2.0.0"
+
+"@ngrx/store-devtools@^18.0.0":
+  version "18.0.0"
+  resolved "https://registry.yarnpkg.com/@ngrx/store-devtools/-/store-devtools-18.0.0.tgz#7e055a93769094d44d1f686b0c506c52386bdfa3"
+  integrity sha512-0XbUnDjpaYq8trJs/RqfEfvFQRgQ0Hm648ImZHTfF1CwHwDe5qZAkLuOt0D/e4YO8itMc4MymZJzEkfJz4HVWw==
+  dependencies:
+    tslib "^2.0.0"
+
+"@ngrx/store@^18.0.0":
+  version "18.0.0"
+  resolved "https://registry.yarnpkg.com/@ngrx/store/-/store-18.0.0.tgz#32a3c589c7f42d981385dbbb16b838ce2511edfe"
+  integrity sha512-U/0cX7cQ7kkQrleNq5PQ1gD84lSI+ox2SIiDNAAxm8li7/S63QuRATFJIkMcVavR8yoa7gZ0WpyEKTlYGxEE2g==
+  dependencies:
+    tslib "^2.0.0"
 
 "@ngtools/webpack@18.0.4":
   version "18.0.4"
@@ -5155,6 +5198,11 @@ combined-stream@^1.0.8:
   dependencies:
     delayed-stream "~1.0.0"
 
+commander@2.19.0:
+  version "2.19.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.19.0.tgz#f6198aa84e5b83c46054b94ddedbfed5ee9ff12a"
+  integrity sha512-6tvAOO+D6OENvRAh524Dh9jcfKTYDQAqvqezbCW82xj5X0pSrcpxtvRKHLG0yBY6SD7PSDrJaj+0AiOcKVd1Xg==
+
 commander@^12.0.0:
   version "12.1.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-12.1.0.tgz#01423b36f501259fdaac4d0e4d60c96c991585d3"
@@ -5535,6 +5583,26 @@ data-urls@^3.0.2:
     abab "^2.0.6"
     whatwg-mimetype "^3.0.0"
     whatwg-url "^11.0.0"
+
+date-fns-timezone@0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/date-fns-timezone/-/date-fns-timezone-0.1.4.tgz#bc9fac78aae9a7bdb847f3ab4ce6d14f9fb9a55f"
+  integrity sha512-npnZn1eIeHV8A3Hqw86mn6CjH+qMe0TSCs4anpD4Rouf+mE9eIJuaHviIpNmGL9GiDmcUoiaKdkX5ihf+yZQZA==
+  dependencies:
+    date-fns "^1.29.0"
+    timezone-support "^1.5.5"
+
+date-fns@2.30.0:
+  version "2.30.0"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.30.0.tgz#f367e644839ff57894ec6ac480de40cae4b0f4d0"
+  integrity sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==
+  dependencies:
+    "@babel/runtime" "^7.21.0"
+
+date-fns@^1.29.0:
+  version "1.30.1"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-1.30.1.tgz#2e71bf0b119153dbb4cc4e88d9ea5acfb50dc05c"
+  integrity sha512-hBSVCvSmWC+QypYObzwGOd9wqdDpOt+0wl0KbU+R+uuZBS1jN8VsD1ss3irQDknRj5NvxiTF6oj/nDRnN/UQNw==
 
 debug@2.6.9:
   version "2.6.9"
@@ -6923,6 +6991,11 @@ image-size@~0.5.0:
   resolved "https://registry.yarnpkg.com/image-size/-/image-size-0.5.5.tgz#09dfd4ab9d20e29eb1c3e80b8990378df9e3cb9c"
   integrity sha512-6TDAlDPZxUFCv+fuOkIoXT/V/f3Qbq8e37p+YOiYrUv3v9cc3/6x78VdfPgFVaB9dZYeLUfKgHRebpkm/oP2VQ==
 
+immer@10.0.3:
+  version "10.0.3"
+  resolved "https://registry.yarnpkg.com/immer/-/immer-10.0.3.tgz#a8de42065e964aa3edf6afc282dfc7f7f34ae3c9"
+  integrity sha512-pwupu3eWfouuaowscykeckFmVTpqbzW+rXFCX8rQLkZzM9ftBmU/++Ra+o+L27mz03zJTlyV4UUr+fdKNffo4A==
+
 immutable@^4.0.0:
   version "4.3.6"
   resolved "https://registry.yarnpkg.com/immutable/-/immutable-4.3.6.tgz#6a05f7858213238e587fb83586ffa3b4b27f0447"
@@ -7967,6 +8040,11 @@ locate-path@^7.1.0:
   integrity sha512-gvVijfZvn7R+2qyPX8mAuKcFGDf6Nc61GdvGafQsHL0sBIxfKzA+usWn4GFC/bk+QdwPUD4kWFJLhElipq+0VA==
   dependencies:
     p-locate "^6.0.0"
+
+lodash-es@4.17.21:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
+  integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
 
 lodash.debounce@^4.0.8:
   version "4.0.8"
@@ -10378,6 +10456,13 @@ thunky@^1.0.2:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/thunky/-/thunky-1.1.0.tgz#5abaf714a9405db0504732bbccd2cedd9ef9537d"
   integrity sha512-eHY7nBftgThBqOyHGVN+l8gF0BucP09fMo0oO/Lb0w1OF80dJv+lDVpXG60WMQvkcxAkNybKsrEIE3ZtKGmPrA==
+
+timezone-support@^1.5.5:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/timezone-support/-/timezone-support-1.8.1.tgz#0a8c04d0614be6fccdd2280aaad5072fa5d31e5f"
+  integrity sha512-+pKzxoUe4PZXaQcswceJlA+69oRyyu1uivnYKdpsC7eGzZiuvTLbU4WYPqTKslEsoSvjN8k/u/6qNfGikBB/wA==
+  dependencies:
+    commander "2.19.0"
 
 tmp@^0.0.33:
   version "0.0.33"
