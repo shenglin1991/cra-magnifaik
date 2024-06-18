@@ -15,9 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@angular/*": ["./node_modules/@angular/*"],
       "@cra/feature": ["src/libs/cra/features/cra-feature/src/index.ts"],
       "@cra/models": ["src/libs/cra/models/cra-models/src/index.ts"],
-      "@cra/stores": ["src/libs/cra/stores/cra-stores/src/index.ts"]
+      "@cra/stores": ["src/libs/cra/stores/cra-stores/src/index.ts"],
     }
   },
   "exclude": ["node_modules", "tmp"]

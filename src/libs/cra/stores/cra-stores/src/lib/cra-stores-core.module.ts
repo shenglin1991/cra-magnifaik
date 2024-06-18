@@ -10,8 +10,6 @@ import { craCoreFeatureKey, craCoreReducers } from './reducers/core.reducer';
       craCoreReducers,
     ),
     EffectsModule.forFeature([
-      // BroomSportEffects,
-      // BroomCompetitionsEffect
     ]),
   ],
 })
