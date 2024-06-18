@@ -4,7 +4,7 @@ import { MatCardModule } from '@angular/material/card';
 import { CraStoresCoreModule } from '@cra/stores';
 
 @Component({
-  selector: 'cra-feature-cra-feature',
+  selector: 'cra-feature-core',
   standalone: true,
   imports: [CommonModule, MatCardModule, CraStoresCoreModule],
   templateUrl: './cra-feature.component.html',
