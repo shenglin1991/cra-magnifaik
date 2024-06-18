@@ -4,6 +4,6 @@ import { projectAdapterSelectors } from '../reducers/project.reducer';
 
 const selectAllProjects = createSelector(selectProjectState, projectAdapterSelectors.selectAll);
 
-export const sportsSelectors = {
+export const projectSelectors = {
   selectAllProjects,
 };
