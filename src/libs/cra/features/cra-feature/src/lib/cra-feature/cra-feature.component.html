@@ -7,6 +7,16 @@
         Welcome CRA Magnifaïk 👋
       </h1>
     </div>
+    <mat-card appearance="outlined" *ngIf="currentCalendar$ | async as currentCalendar">
+      <div>
+        <span>{{ currentCalendar | date: 'yyyy' }}</span>
+      </div>
+
+      <div *ngIf="currentMonthDays$ | async as currentMonthDays">
+        <span>{{ currentMonthDays }} days in </span>
+        <span>{{ currentCalendar | date: 'MMMM' }}</span>
+      </div>
+    </mat-card>
 
     <mat-card appearance="outlined">
       <mat-card-content>
