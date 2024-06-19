@@ -10,8 +10,14 @@
     @if(vm$ | async; as vm) {
         <mat-card class="cra-calendar-form" appearance="outlined">
           <div class="select-month">
+            <button mat-fab aria-label="Example icon button with a delete icon">
+              <mat-icon>chevron_left</mat-icon>
+            </button>
             <span>{{ vm.currentCalendar | date: 'yyyy' }}</span> - 
             <span>{{ vm.currentCalendar | date: 'MMMM' }}</span>
+            <button mat-fab aria-label="Example icon button with a delete icon">
+              <mat-icon>chevron_right</mat-icon>
+            </button>
           </div>
         </mat-card>
         <mat-card appearance="outlined" class="cra-table">

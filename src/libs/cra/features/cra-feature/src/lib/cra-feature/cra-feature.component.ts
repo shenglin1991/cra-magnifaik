@@ -1,17 +1,21 @@
 import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
-import { AsyncPipe, CommonModule, DatePipe, NgIf } from '@angular/common';
+import { AsyncPipe, DatePipe, NgIf } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { CraTableComponent } from '../cra-table/cra-table.component';
 import { CraStoresCoreModule } from '@cra/stores';
 import { FacadeService } from '../facade.service';
 import { Observable } from 'rxjs';
-import { CraTableVM, Employee } from '@cra/models';
+import { CraTableVM } from '@cra/models';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'cra-feature-core',
   standalone: true,
   imports: [
     MatCardModule,
+    MatButtonModule,
+    MatIconModule,
     CraTableComponent,
     CraStoresCoreModule,
     AsyncPipe,
