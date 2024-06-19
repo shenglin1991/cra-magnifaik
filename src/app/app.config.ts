@@ -6,6 +6,7 @@ import { provideStoreDevtools, StoreDevtoolsModule } from '@ngrx/store-devtools'
 import { EffectsModule, provideEffects } from '@ngrx/effects';
 import { provideHttpClient } from '@angular/common/http';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
+import { provideAnimations } from '@angular/platform-browser/animations';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -13,6 +14,7 @@ export const appConfig: ApplicationConfig = {
     provideStoreDevtools(),
     provideEffects([]),
     provideHttpClient(),
+    provideAnimations(),
     importProvidersFrom(
       // configure NgRx modules
       StoreModule.forRoot({

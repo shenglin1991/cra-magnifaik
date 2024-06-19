@@ -1,7 +1,8 @@
 export interface Employee {
     id: number;
-    fistname: string;
+    firstname: string;
     lastname: string;
 
     paidLeave: number;
+    assignment: { [ dateLabel: string]: number | null };
 }

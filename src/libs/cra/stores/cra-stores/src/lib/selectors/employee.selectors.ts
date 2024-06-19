@@ -1,11 +1,8 @@
 import { createSelector } from '@ngrx/store';
-import { employeeAdapterSelectors } from '../reducers/employee.reducer';
+import { ICraEmployeeState } from '../reducers/employee.reducer';
 import { selectEmployeeState } from './core.selectors';
 
-const selectAllEmployees = createSelector(selectEmployeeState, employeeAdapterSelectors.selectAll);
-const selectEmployeesEntities = createSelector(selectEmployeeState, employeeAdapterSelectors.selectEntities);
-
-export const employeesSelectors = {
-  selectAllEmployees,
-  selectEmployeesEntities,
-};
+export const selectAllEmployees = createSelector(
+  selectEmployeeState,
+  (state: ICraEmployeeState) => state.employees,
+);

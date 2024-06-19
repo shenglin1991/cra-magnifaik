@@ -12,22 +12,25 @@ export class CraEmployeeEffects {
       mergeMap(() =>
         of([{
           id: 1,
-          fistname: 'Harry',
+          firstname: 'Harry',
           lastname: 'Potter',
 
           paidLeave: 7,
+          assignment: {},
         }, {
           id: 2,
-          fistname: 'Ron',
+          firstname: 'Ron',
           lastname: 'weasley',
 
           paidLeave: 7,
+          assignment: {},
         }, {
           id: 3,
-          fistname: 'Hermione',
+          firstname: 'Hermione',
           lastname: 'Granger',
 
           paidLeave: 7,
+          assignment: {},
         }])
       ),
       map((employees: Employee[]) => employeesActions.allEmployeesLoaded({ employees })),

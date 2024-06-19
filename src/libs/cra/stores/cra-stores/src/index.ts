@@ -8,3 +8,4 @@ export * from './lib/actions/project.actions';
 export * from './lib/selectors/core.selectors';
 export * from './lib/selectors/employee.selectors';
 export * from './lib/selectors/project.selectors';
+export * from './lib/selectors/cra.selectors';

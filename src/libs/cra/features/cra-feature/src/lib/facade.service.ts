@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { craSelectors, employeesActions, projectsActions } from '@cra/stores';
+import { CraTableVM } from '@cra/models';
+import { employeesActions, projectsActions, selectCraViewModel } from '@cra/stores';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 
@@ -18,11 +19,11 @@ export class FacadeService {
     this.store.dispatch(projectsActions.allProjectsRequested());
   }
 
-  public getCurrentCalendar(): Observable<Date> {
-    return this.store.select(craSelectors.selectCurrentCalendar);
+  public getCraTableVM(): Observable<CraTableVM> {
+    return this.store.select(selectCraViewModel);
   }
 
-  public getCurrentMonthDays(): Observable<number> {
-    return this.store.select(craSelectors.selectCurrentMonthDays);
+  public assignProjectToEmployee(employeeId: number, projectId: number, date: string): void {
+    this.store.dispatch(employeesActions.assignProjectToEmployee({ employeeId, projectId, date }))
   }
 }

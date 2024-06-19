@@ -10,7 +10,13 @@ const allEmployeesLoaded = createAction(
   props<{ employees: Employee[] }>(),
 );
 
+const assignProjectToEmployee = createAction(
+  `${prefix} Assign project to employee`,
+  props<{ employeeId: number; projectId: number; date: string }>(),
+);
+
 export const employeesActions = {
   allEmployeeRequested,
   allEmployeesLoaded,
+  assignProjectToEmployee,
 };

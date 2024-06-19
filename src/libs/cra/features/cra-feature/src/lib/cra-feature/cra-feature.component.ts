@@ -5,6 +5,7 @@ import { CraTableComponent } from '../cra-table/cra-table.component';
 import { CraStoresCoreModule } from '@cra/stores';
 import { FacadeService } from '../facade.service';
 import { Observable } from 'rxjs';
+import { CraTableVM, Employee } from '@cra/models';
 
 @Component({
   selector: 'cra-feature-core',
@@ -24,9 +25,8 @@ import { Observable } from 'rxjs';
 export class CraFeatureComponent implements OnInit {
 
   private facade = inject(FacadeService);
-  
-  public currentCalendar$: Observable<Date> = this.facade.getCurrentCalendar();
-  public currentMonthDays$: Observable<number> = this.facade.getCurrentMonthDays();
+
+  public vm$: Observable<CraTableVM> = this.facade.getCraTableVM();
   
   public ngOnInit(): void {
     this.facade.initEmployees();

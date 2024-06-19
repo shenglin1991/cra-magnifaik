@@ -1,9 +1,5 @@
 import { createSelector } from '@ngrx/store';
 import { selectProjectState } from './core.selectors';
-import { projectAdapterSelectors } from '../reducers/project.reducer';
+import { ICraProjectState } from '../reducers/project.reducer';
 
-const selectAllProjects = createSelector(selectProjectState, projectAdapterSelectors.selectAll);
-
-export const projectSelectors = {
-  selectAllProjects,
-};
+export const selectAllProjects = createSelector(selectProjectState, (state: ICraProjectState) => state.projects);
