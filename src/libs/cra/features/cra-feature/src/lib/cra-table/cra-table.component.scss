@@ -30,3 +30,18 @@ mat-header-cell {
     border-left: 2px solid rgba(0, 0, 0, 0.12);
     border-right: 2px solid rgba(0, 0, 0, 0.12);
 }
+
+::ng-deep.mat-mdc-text-field-wrapper.mdc-text-field{
+    .yellow > & {
+        background-color: #ffcc00;
+    }
+    .blue > & {
+        background-color: #7caae8;
+    }
+    .green > & {
+        background-color: #afe293;
+    }
+    .grey > & {
+        background-color: #cccccc;
+    }
+}

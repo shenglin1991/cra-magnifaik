@@ -41,6 +41,19 @@ export class CraTableComponent implements OnInit, OnChanges {
     this.facade.assignProjectToEmployee(employee.id, event.value, date);
   }
 
+  public formColor(projectId: number | null): string {
+    switch (projectId) {
+      case 0:
+        return 'yellow';
+      case 1:
+        return 'blue';
+      case 2:
+        return 'green';
+      default:
+        return 'grey';
+    }
+  }
+
   private setUpDisplayedColumns(): void {
     this.displayedColumns = [
       ...this.fixedColumns,

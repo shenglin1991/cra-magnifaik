@@ -24,7 +24,7 @@
             <th mat-header-cell *matHeaderCellDef> {{ monthColumn.id }} {{ monthColumn.date | date: 'EEEE' }} </th>
             <td mat-cell *matCellDef="let employee" [ngClass]="{ cursor: monthColumn.isWeekday }">
                 @if (monthColumn.isWeekday) {
-                    <mat-form-field style="width: 6rem" appearance="fill">
+                    <mat-form-field style="width: 6rem" appearance="fill" [class]="formColor(employee.assignment[monthColumn.label])">
                         <mat-label>Assign</mat-label>
                         <mat-select overlayPanelClass="mat-select-panel" 
                             hideSingleSelectionIndicator="true"
