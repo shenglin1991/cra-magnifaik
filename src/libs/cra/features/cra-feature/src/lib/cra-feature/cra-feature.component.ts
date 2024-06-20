@@ -36,4 +36,12 @@ export class CraFeatureComponent implements OnInit {
     this.facade.initEmployees();
     this.facade.initProjects();
   }
+
+  public previousMonth(): void {
+    this.facade.previousMonth();
+  }
+
+  public nextMonth(): void {
+    this.facade.nextMonth();
+  }
 }

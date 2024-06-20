@@ -3,6 +3,7 @@ export * from './lib/cra-stores-core.module';
 // Actions
 export * from './lib/actions/employee.actions';
 export * from './lib/actions/project.actions';
+export * from './lib/actions/cra.actions';
 
 // Selectors
 export * from './lib/selectors/core.selectors';

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { CraTableVM } from '@cra/models';
-import { employeesActions, projectsActions, selectCraViewModel } from '@cra/stores';
+import { craActions, employeesActions, projectsActions, selectCraViewModel } from '@cra/stores';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 
@@ -25,5 +25,13 @@ export class FacadeService {
 
   public assignProjectToEmployee(employeeId: number, projectId: number, date: string): void {
     this.store.dispatch(employeesActions.assignProjectToEmployee({ employeeId, projectId, date }))
+  }
+
+  public previousMonth(): void {
+    this.store.dispatch(craActions.previousMonth());
+  }
+
+  public nextMonth(): void {
+    this.store.dispatch(craActions.nextMonth());
   }
 }
